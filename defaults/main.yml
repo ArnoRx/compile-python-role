@@ -1,0 +1,8 @@
+---
+python_version: 3.8.7
+python_tarball_url: https://www.python.org/ftp/python/{{ python_version }}/Python-{{ python_version }}.tgz
+ensure_pip: install # or upgrade
+enable_optimizations: true
+python_path: "/usr/local/python{{ python_version[:3] }}"
+make_num_threads: "{{ ansible_processor_vcpus }}"
+clean_package_requirements: false
